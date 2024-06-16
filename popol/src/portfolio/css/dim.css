@@ -1,0 +1,38 @@
+.dim {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.dim .info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.dim .info-box > button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 35px;
+  margin-top: 16px;
+  transition: .3s;
+}
+.dim .info-box > button:hover{
+  color: black;
+  border-color: black;
+  background-color: #fff;
+}

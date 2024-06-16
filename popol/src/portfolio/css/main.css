@@ -1,0 +1,112 @@
+/* li담고 있는 ul박스 */
+.main_flexwrap{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+}
+
+/* 각각의 li */
+.main_flex_item{
+    position: relative;
+    width: 40vh;
+    height: 40vh;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    margin-right: 10vh;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.main_flex_item:hover{
+    position: relative;
+    transition: .3s linear;
+    width: 40vh;
+    height: 40vh;
+    border: 4px solid #fff;
+    margin-right: 10vh;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.main_flex_item button{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    border-radius: 30px;
+    padding: 3% 7%;
+    box-sizing: border-box;
+}
+.main_flex_item:hover button{
+    transition: .3s;
+    border: 2px solid white;
+    color: white;
+}
+.main_flex_item button:hover{
+    transition: .3s;
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+    /* font-weight: bold; */
+}
+
+/* 프로그램언어부분 */
+.main_flex_item h4{
+    font-size: 1.8vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+.main_flex_item:hover h4{
+    transition: .3s;
+    color: white;
+}
+
+/* 제목밑의 밑줄 가상요소로 */
+.main_flex_item h4::after{
+    content: '';
+    display: block;
+    width: 0vh;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top : 3%;
+}
+.main_flex_item:hover h4::after{
+    content: '';
+    transition: .3s;
+    display: block;
+    width: 40vh;
+    height: 3px;
+    background-color: white;
+    margin-top : 3%;
+}
+
+
+
+/* 프로젝트 제목명들 */
+.main_flex_item p{
+    font-size: 4.5vh;
+    margin-top: 10%;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}
+.main_flex_item:hover p{
+    transition: .3s;
+    color: white;
+}
+
+
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: brightness(0.7);
+}
+.bg img{
+    width: 100%;
+    height: 100%;
+}

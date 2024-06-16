@@ -1,0 +1,123 @@
+.layout_header_ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    padding-top: 15px;
+    height: 90px;
+    align-items: center;
+}
+.layout_header_ul img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+        width: 70px;
+}
+.menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.menu button{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vh;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* 슬라이드사이드바 */
+/* 슬라이드 겉박 */
+.side{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 800px;
+    background-color: black;
+}
+.side ul{
+    color : white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    min-width: 600px;
+    height: 100%;
+    transform: translate(-50%,-50%);
+    border: 1px solid silver;
+    padding: 5% 5%;
+    box-sizing: border-box;
+}
+.side ul li {
+    font-size: max(24px,2.7vw);
+}
+.side ul li + li {
+    margin-top: 16px;
+}
+.side ul li div div:first-child{
+    width: 50%;
+}
+.side ul li div div:last-child{
+    width: fit-content;
+    text-align: right;
+    cursor: pointer;
+}
+.flexbx{
+    display: flex;
+    justify-content: space-between;
+}
+.side li:last-child{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: max(14px);
+}
+.txtbx{
+    font-size: max(1.2vw, 16px);
+    margin-top: 12px;
+}
+.sogabtnbx{
+    margin-top: 3%;
+    display: grid;
+            /* 가로방향 12그리드 셋팅 */
+            grid-template-columns: repeat(3, 1fr);
+            /* 세로방향 높이값 셋팅 */
+            /* grid-template-rows:  */
+            grid-row-gap: 15px;
+            /* 좌우갭 */
+            grid-column-gap: 10px;
+}
+.side button {
+    color :white;
+    background-color: transparent;
+}
+.descbx{
+    margin-top: 16px;
+    font-size: max(1.4vw,16px);
+}
+
+.xbtn{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 4vw;
+    color: white;
+    cursor: pointer;
+}
